@@ -1,0 +1,26 @@
+_D_e_g_r_e_e _o_f _t_h_e _v_e_r_t_i_c_e_s _i_n _a _g_r_a_p_h
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     Get the degree of vertices in a graph.
+
+_U_s_a_g_e:
+
+     fg.degree(graph, type = "both")
+     
+_A_r_g_u_m_e_n_t_s:
+
+   graph: The FlashGraphR object
+
+    type: Character string. "out" for out-degree, "in" for in-degree,
+          "both" for the sum of the two. This argument is ignored for
+          undirected graphs.
+
+_V_a_l_u_e:
+
+     A numeric vector with the degree of each vertex in the graph.
+
+_A_u_t_h_o_r(_s):
+
+     Da Zheng <dzheng5@jhu.edu>
+

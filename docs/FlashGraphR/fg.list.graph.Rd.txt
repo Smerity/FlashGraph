@@ -1,0 +1,21 @@
+_L_i_s_t _g_r_a_p_h_s _l_o_a_d_e_d _t_o _F_l_a_s_h_G_r_a_p_h_R
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     This function lists all graphs that have been loaded to
+     FlashGraphR.
+
+_U_s_a_g_e:
+
+     fg.list.graphs()
+     
+_V_a_l_u_e:
+
+     A list of graphs in a data frame. The first column of the data
+     frame is the graph name. The second column indicates whether a
+     graph is stored in memory or on disks.
+
+_A_u_t_h_o_r(_s):
+
+     Da Zheng <dzheng5@jhu.edu>
+

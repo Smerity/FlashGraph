@@ -1,0 +1,39 @@
+_G_r_a_p_h _i_n_f_o_r_m_a_t_i_o_n
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     Functions for providing the basic information of a graph.
+
+_U_s_a_g_e:
+
+     fg.vcount(graph)
+     
+     fg.ecount(graph)
+     
+     fg.in.mem(graph)
+     
+     fg.is.directed(graph)
+     
+_A_r_g_u_m_e_n_t_s:
+
+     The: FlashGraphR object
+
+_D_e_t_a_i_l_s:
+
+     `fg.vcount' gets the number of vertices in a graph.
+
+     `fg.ecount' gets the number of edges in a graph.
+
+     `fg.in.mem' indicates whether a graph is stored in memory.
+
+     `fg.is.directed' indicates whether a graph is directed.
+
+_V_a_l_u_e:
+
+     `fg.vcount' and `fg.ecount' returns integer constants. `fg.in.mem'
+     and `fg.is.directed' returns boolean constants.
+
+_A_u_t_h_o_r(_s):
+
+     Da Zheng <dzheng5@jhu.edu>
+

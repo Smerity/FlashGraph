@@ -1,0 +1,47 @@
+_C_o_n_n_e_c_t_e_d _c_o_m_p_o_n_e_n_t_s _o_f _a _g_r_a_p_h
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     Compute all (weakly or strongly) connected components of a graph.
+
+_U_s_a_g_e:
+
+     fg.clusters(graph, mode = c("weak", "strong"))
+     
+_A_r_g_u_m_e_n_t_s:
+
+   graph: The FlashGraphR object
+
+    mode: Character string, either "weak" or "strong". For directed
+          graphs "weak" implies weakly, "strong" strongly c components
+          to search. It is ignored for undirected graphs.
+
+_D_e_t_a_i_l_s:
+
+     For an undirected graph, this function only computes connected
+     components and ignores the argument `mode'.
+
+     For strongly connected components, we use a customized version of
+     the algorithm described in the paper
+
+     Sungpack Hong, Nicole C. Rodia, Kunle Olukotun, On Fast Parallel
+     Detection of Strongly Connected Components (SCC) in Small-World
+     Graphs, Proceedings of the International Conference on High
+     Performance Computing, Networking, Storage and Analysis, 2013
+
+_V_a_l_u_e:
+
+     A numeric vector that indicates the cluster id to which each
+     vertex blongs to.
+
+_A_u_t_h_o_r(_s):
+
+     Da Zheng <dzheng5@jhu.edu>
+
+_R_e_f_e_r_e_n_c_e_s:
+
+     Sungpack Hong, Nicole C. Rodia, Kunle Olukotun, On Fast Parallel
+     Detection of Strongly Connected Components (SCC) in Small-World
+     Graphs, Proceedings of the International Conference on High
+     Performance Computing, Networking, Storage and Analysis, 2013
+

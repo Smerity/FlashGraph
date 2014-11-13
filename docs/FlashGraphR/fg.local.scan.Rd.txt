@@ -1,0 +1,44 @@
+_L_o_c_a_l_i_t_y _s_t_a_t_i_s_t_i_c
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     Compute locality statistic of vertices in a graph.
+
+_U_s_a_g_e:
+
+     fg.topK.scan(graph, order = 1, K = 1)
+     
+     fg.local.scan(graph, order = 1)
+     
+_A_r_g_u_m_e_n_t_s:
+
+   graph: The FlashGraphR object
+
+   order: An integer scalar, the size of the local neighborhood for
+          each vertex. Should be non-negative.
+
+_D_e_t_a_i_l_s:
+
+     `fg.topK.scan' finds the top K vertices with the largest locality
+     statistics in a graph and computes their locality statistic.
+
+     `fg.local.scan' computes locality statistic of each vertex in a
+     graph.
+
+     Locality statistic is defined as the number of edges in the
+     neighborhood of a vertex.
+
+_V_a_l_u_e:
+
+     A numeric vector that contains locality statistic of each vertex.
+
+_A_u_t_h_o_r(_s):
+
+     Da Zheng <dzheng5@jhu.edu>
+
+_R_e_f_e_r_e_n_c_e_s:
+
+     C.E. Priebe, J.M. Conroy, D.J. Marchette, and Y. Park, Scan
+     Statistics on Enron Graphs," Computational and Mathematical
+     Organization Theory, 2005.
+

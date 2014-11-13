@@ -1,0 +1,52 @@
+_E_i_g_e_n_s_o_l_v_e_r
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     Compute eigenvalues/vectors of the adjacency matrix of an
+     undirected graph.
+
+_U_s_a_g_e:
+
+     fg.eigen(graph, which = "LM", nev = 1, ncv = 2)
+     
+_A_r_g_u_m_e_n_t_s:
+
+   graph: The FlashGraphR object
+
+   which: Specify which eigenvalues/vectors to compute, character
+          constant with exactly two characters. Possible values for
+          symmetric input matrices: "LA' Compute 'nev' largest
+          (algebraic) eigenvalues. "SA" Compute "nev" smallest
+          (algebraic) eigenvalues. "LM" Compute `nev' largest (in
+          magnitude) eigenvalues. "SM" Compute `nev' smallest (in
+          magnitude) eigenvalues.
+
+     nev: Numeric scalar. The number of eigenvalues to be computed.
+
+     ncv: Number of Lanczos vectors to be generated.
+
+_D_e_t_a_i_l_s:
+
+     This implements Implicitly Restart Lanczos method described in the
+     paper
+
+     D. Calvetti and L. Reichel and D. C. Sorensen: An Implicitly
+     Restarted Lanczos method for Large Symmetric Eigenvalue problems,
+     Jounral of ETNA, 1994.
+
+_V_a_l_u_e:
+
+     A named list with the following members: values: Numeric vector,
+     the desired eigenvalues.  vectors: Numeric matrix, the desired
+     eigenvectors as columns.
+
+_A_u_t_h_o_r(_s):
+
+     Da Zheng <dzheng5@jhu.edu>
+
+_R_e_f_e_r_e_n_c_e_s:
+
+     D. Calvetti and L. Reichel and D. C. Sorensen: An Implicitly
+     Restarted Lanczos method for Large Symmetric Eigenvalue problems,
+     Jounral of ETNA, 1994.
+

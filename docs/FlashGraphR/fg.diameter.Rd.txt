@@ -1,0 +1,42 @@
+_D_i_a_m_e_t_e_r _e_s_t_i_m_a_t_i_o_n
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     Estimate the diameter of a graph, the longest distance between two
+     vertices in a graph.
+
+_U_s_a_g_e:
+
+     fg.diameter(graph, directed = FALSE)
+     
+_A_r_g_u_m_e_n_t_s:
+
+   graph: The FlashGraphR object
+
+directed: Indicates whether or not to respect the direction of edges in
+          a graph when traversing the graph. It is ignored for
+          undirected graphs.
+
+_D_e_t_a_i_l_s:
+
+     This implementation uses the double sweep method described in the
+     paper below to estimate the lower bound of the diameter.
+
+     Cl茅mence Magnienand Matthieu Latapy and Michel Habib: Fast
+     computation of empirically tight bounds for the diameter of
+     massive graphs, Journal of Experimental Algorithmics (JEA), 2009
+
+_V_a_l_u_e:
+
+     A single number
+
+_A_u_t_h_o_r(_s):
+
+     Da Zheng <dzheng5@jhu.edu>
+
+_R_e_f_e_r_e_n_c_e_s:
+
+     Cl茅mence Magnienand Matthieu Latapy and Michel Habib: Fast
+     computation of empirically tight bounds for the diameter of
+     massive graphs, Journal of Experimental Algorithmics (JEA), 2009
+

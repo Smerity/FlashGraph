@@ -1,0 +1,49 @@
+_P_a_g_e_R_a_n_k
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     Compute the Google PageRank for a graph.
+
+_U_s_a_g_e:
+
+     fg.page.rank(graph, no.iters = 1000, damping = 0.85)
+     
+_A_r_g_u_m_e_n_t_s:
+
+   graph: The FlashGraphR object
+
+no.iters: The number of iterations
+
+ damping: The damping factor ('d' in the original p)
+
+_D_e_t_a_i_l_s:
+
+     This implementation computes PageRank values in the original
+     PageRank paper below and does not normalize PageRank values in
+     each iteration.
+
+     Sergey Brin and Larry Page: The Anatomy of a Large-Scale
+     Hypertextual Web Search Engine. Proceedings of the 7th World-Wide
+     Web Conference, Brisbane, Australia, April 1998.
+
+     To improve performance, a vertex only sends the difference of its
+     PageRank value between the previous iteration and the current
+     iteration to its neighbors in each iteration. If the difference is
+     smaller than a threshold, a vertex does not send the difference to
+     its neighbors. The algorithm converges if all vertices stop
+     sending messages.
+
+_V_a_l_u_e:
+
+     A numeric vector that contains PageRank values of each vertex.
+
+_A_u_t_h_o_r(_s):
+
+     Da Zheng <dzheng5@jhu.edu>
+
+_R_e_f_e_r_e_n_c_e_s:
+
+     Sergey Brin and Larry Page: The Anatomy of a Large-Scale
+     Hypertextual Web Search Engine. Proceedings of the 7th World-Wide
+     Web Conference, Brisbane, Australia, April 1998.
+

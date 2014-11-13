@@ -1,0 +1,21 @@
+_R_e_c_o_n_f_i_g_u_r_e _F_l_a_s_h_G_r_a_p_h_R
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     This reconfigures FlashGraphR with the settings in the
+     configuration file. The configuration file contains a list of
+     key-value pairs. Each line in the file is a key-value pair in the
+     form of "key_name=value".
+
+_U_s_a_g_e:
+
+     fg.set.conf(conf.file)
+     
+_A_r_g_u_m_e_n_t_s:
+
+conf.file: The configuration file.
+
+_A_u_t_h_o_r(_s):
+
+     Da Zheng <dzheng5@jhu.edu>
+

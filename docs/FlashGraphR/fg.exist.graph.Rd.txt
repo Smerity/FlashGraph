@@ -1,0 +1,23 @@
+_I_n_d_i_c_a_t_e _w_h_e_t_h_e_r _a _g_r_a_p_h _h_a_s _b_e_e_n _l_o_a_d_e_d _t_o _F_l_a_s_h_G_r_a_p_h_R
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     This function indicates whether a graph has been loaded to
+     FlashGraphR.
+
+_U_s_a_g_e:
+
+     fg.exist.graph(graph)
+     
+_A_r_g_u_m_e_n_t_s:
+
+   graph: A graph name.
+
+_V_a_l_u_e:
+
+     A boolean value: true if the graph has been loaded to FlashGraphR.
+
+_A_u_t_h_o_r(_s):
+
+     Da Zheng <dzheng5@jhu.edu>
+
